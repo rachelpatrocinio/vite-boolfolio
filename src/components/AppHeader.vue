@@ -1,5 +1,26 @@
 <template>
-    <header>HEADER</header>
+<header class="main-header shadow-sm">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-md d-flex flex-wrap">
+                <div class="logo d-flex justify-content-center w-100">
+                    <a class="navbar-brand mt-4" href="#">
+                        <img src="../../public/logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <ul class="navbar-nav me-auto d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 </template>
 
 <script>
@@ -9,5 +30,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+.main-header{
+    background-color: #FAF7F2;
+}
 </style>

@@ -6,6 +6,7 @@
         <!-- sto passando i dati di projects al componente figlio -->
         <ProjectCard :projects="projects"></ProjectCard>
 
+        <!-- stampo le pagine e al click cambio pagina -->
         <ul class="d-flex">
           <li 
             v-for="pageN in lastPage" :key="pageN"
