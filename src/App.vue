@@ -1,23 +1,7 @@
 <template>
   <AppHeader></AppHeader>
   <main class="my-5">
-    <div class="container">
-      <div class="row">
-        <div class="cards">
-          <ProjectCard :projects="projects"></ProjectCard>
-        </div>
-
-        <div class="pages d-flex justify-content-center">
-          <ul class="d-flex">
-            <li class="p-2 mx-1 page text-white rounded"
-              v-for="pageN in lastPage" :key="pageN"
-              @click="changePage(pageN)">
-              {{ pageN }}
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <RouterView/>
   </main>
   <AppFooter></AppFooter>
 </template>

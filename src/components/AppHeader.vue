@@ -11,7 +11,7 @@
 
                 <ul class="navbar-nav me-auto d-flex">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <RouterLink to="/" class="nav-link">Home</RouterLink>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Projects</a>
