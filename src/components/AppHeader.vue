@@ -14,7 +14,7 @@
                         <RouterLink to="/" class="nav-link">Home</RouterLink>
                     </li>
                     <li class="nav-item">
-                        <RouterLink to="/projects" class="nav-link">Projects</RouterLink>
+                        <RouterLink to="/Portfolio" class="nav-link">Portfolio</RouterLink>
                     </li>
                 </ul>
             </nav>
