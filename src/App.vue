@@ -1,18 +1,17 @@
 <template>
   <div>
-    <ul>
-      <li v-for="project in projects">
-        <h5>{{ project.project_title }}</h5>
-        <p>{{ project.project_description }}</p>
-      </li>
-    </ul>
-
+    <!-- sto passando i dati di projects al componente figlio -->
+    <ProjectCard :projects="projects"></ProjectCard>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import ProjectCard from './components/ProjectCard.vue'
   export default {
+    components:{
+      ProjectCard
+    },
     data(){
       return{
         projects: []
