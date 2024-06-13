@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <!-- sto passando i dati di projects al componente figlio -->
-    <ProjectCard :projects="projects"></ProjectCard>
+  <div class="container">
+    <div class="row">
+      <!-- sto passando i dati di projects al componente figlio -->
+      <ProjectCard :projects="projects"></ProjectCard>
+    </div>
   </div>
 </template>
 
