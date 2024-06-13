@@ -15,8 +15,5 @@
 .main-footer{
     background-color: #FAF7F2;
     height: 60px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 </style>

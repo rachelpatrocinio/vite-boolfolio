@@ -1,7 +1,13 @@
 <template>
-<div v-for="project in projects" :key="project.id" class="card p-3">
-    <h4 class="card-title"><strong>Title:</strong> {{ project.project_title }}</h4>
-    <p><strong>Description:</strong> {{ project.project_description }}</p>
+<div v-for="project in projects" :key="project.id" class="card p-4 my-4 d-flex flex-row justify-content-between">
+    <div class="w-50">
+        <h4 class="card-title">{{ project.project_title }}</h4>
+        <h6>{{ project.slug }}</h6>
+        <p>{{ project.github_url }}</p>
+    </div>
+    <div class="w-50 text-end">
+        <button class="btn bg-lightbrown">More Details</button>
+    </div>
 </div>
 </template>
 
