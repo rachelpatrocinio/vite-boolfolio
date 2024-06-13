@@ -16,6 +16,9 @@
                     <li class="nav-item">
                         <RouterLink to="/Portfolio" class="nav-link">Portfolio</RouterLink>
                     </li>
+                    <li class="nav-item">
+                        <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+                    </li>
                 </ul>
             </nav>
         </div>
