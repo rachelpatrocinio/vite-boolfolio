@@ -31,7 +31,7 @@ export default {
         },
         fetchProject(){
             axios
-                .get("http://127.0.0.1:8000/api/projects/" + this.slug)
+                .get(`http://127.0.0.1:8000/api/projects/${this.slug}`)
                 .then(res =>{
                     // console.log(res.data.project);
                     this.project = res.data.project;
