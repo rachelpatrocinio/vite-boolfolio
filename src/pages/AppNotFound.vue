@@ -1,7 +1,9 @@
 <template>
-    <div>
-
+<div class="container">
+    <div class="row">
+        404 - Page not Found 
     </div>
+</div>
 </template>
 
 <script>
