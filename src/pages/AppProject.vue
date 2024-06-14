@@ -9,6 +9,8 @@
                     <p>{{ project.project_description }}</p>
                 </div>
             </div>
+
+            <button @click="goBack" class="btn bg-brown mt-2">GO BACK</button>
         </div>
     </div>
 </template>
@@ -24,6 +26,9 @@ export default {
         }
     },
     methods:{
+        goBack(){
+            this.$router.back()
+        },
         fetchProject(){
             axios
                 .get("http://127.0.0.1:8000/api/projects/" + this.slug)

@@ -6,7 +6,7 @@
         <p>{{ project.github_url }}</p>
     </div>
     <div class="w-50 text-end">
-        <router-link :to="{ name: 'projects.show', params: { slug: project.slug } }" >
+        <router-link :to="{ name: 'singleProject', params: { slug: project.slug } }" >
             <button class="btn bg-lightbrown">More Details</button>
         </router-link>
     </div>
