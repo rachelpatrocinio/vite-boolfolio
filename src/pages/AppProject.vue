@@ -37,6 +37,9 @@ export default {
                     // console.log(res.data.project);
                     this.project = res.data.project;
                 })
+                .catch((err) => {
+                    this.$router.push({name: 'NotFound'});
+                })
         }
     },
     created(){
