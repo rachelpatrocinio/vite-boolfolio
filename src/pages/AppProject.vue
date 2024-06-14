@@ -3,7 +3,8 @@
         <div class="row">
             <h3>{{ $route.params.slug }}</h3>
 
-            <div class="card">
+            <!-- inizialmente settando project null mi dava errore in console.. perchè veniva rendirizzato piu tardi. ora mettendo il v-if non darà piu errore. -->
+            <div v-if="project" class="card">
                 <div class="card-title">
                     <h2>{{ project.project_title }}</h2>
                     <p>{{ project.project_description }}</p>
@@ -21,7 +22,7 @@ import axios from 'axios';
 export default {
     data(){
         return{
-            project: [],
+            project: null,
             slug: this.$route.params.slug
         }
     },
