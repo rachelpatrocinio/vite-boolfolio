@@ -17,7 +17,7 @@
                         <RouterLink to="/Portfolio" class="nav-link">Portfolio</RouterLink>
                     </li>
                     <li class="nav-item">
-                        <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+                        <RouterLink to="/contact" class="nav-link">Contact Me</RouterLink>
                     </li>
                 </ul>
             </nav>
